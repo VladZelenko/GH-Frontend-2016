@@ -1,0 +1,211 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background: linear-gradient(to bottom, #CED6D8 , #EDF1F1 , #FFFFFF 60%);
+}
+.container {
+    width: 780px;
+    margin: auto;
+}
+
+.login {
+	margin-left: 620px;
+	width: 158px;
+	height: 24px;
+	background: #FFFFFF;
+	border-radius: 0 0 15px 15px;
+}
+
+.login a {
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.login a:first-child {
+	padding-right: 12px;
+	padding-left: 22px;
+	border-right: 1px solid #969696;
+	color: #969696;
+}
+
+.login a:last-child {
+	padding-left: 12px;
+	padding-right: 21px;
+	color: #00B3FE;
+}
+
+#logotype {
+	float: left;
+	margin-top: 17px;
+}
+
+h1 {
+	float: right;
+	margin-top: 39px;
+	margin-right: 29px;
+	font-size: 15px;
+	color: #646464;
+}
+/*Навигация, переделать*/
+nav {
+	margin-top: 95px;
+	border-bottom: 1px solid #94969A;
+}
+.navigation ul {
+	padding: 0px;
+	margin-left: 352px;
+	margin-right: 27px;
+	border: 1px solid #94969A;
+	border-radius: 25px 25px 0 0;
+}
+
+.navigation ul li {
+	display: inline-block;
+	margin-right: 0px;
+	background: linear-gradient(to bottom, #E4EBEC, #DAD9D6);
+}
+
+.navigation ul li:first-child {
+	padding: 18px 37px 18px 42px;
+	border-radius: 25px 0 0 0;
+	
+}
+
+.navigation ul li:nth-child(2) {
+	padding: 18px;
+}
+
+.navigation ul li:last-child {
+	padding: 18px 36px 18px 31px;
+	border-radius: 0 25px 0 0;
+}
+
+.navigation a {
+	height: 15px;
+	text-decoration: none;
+	font-size: 15,54px;
+	color: #94969A;
+}
+
+/*конец навигации*/
+
+.sidebar {
+	width: 250px;
+}
+
+.sidebar>span {
+	display: block;
+	margin-left: 3px;
+	margin-bottom: 37px;
+	margin-top: 25px;
+}
+
+.sidebar span a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #00B7FE;
+}
+
+.sidebar ul li {
+	padding: 10px 0 10px 0;
+	list-style: none;
+	border-bottom: 1px solid #CDCAC9;
+}
+
+.sidebar ul li img {
+		margin-right: 11px;
+}
+
+.sidebar ul li:last-child{
+	padding-bottom: 52px;
+}
+
+.sidebar ul li a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #545454;
+}
+
+.rss {
+	padding: 15px 65px;
+	margin-bottom: 22px;
+	border-bottom: 1px solid #CDCAC9;
+}
+
+aside {
+	padding: 14px 65px;
+}
+
+footer {
+	height: 62px;
+	border-top: 1px solid #94969A;
+}
+
+.copy-right {
+	margin-left: 250px;
+	margin-right: 25px;
+	height: 30px;
+	width: 505px;
+	background: #DADBDB;
+	border-radius: 0 0 15px 15px;
+}
+
+.copy-right>span {
+	padding: 15px 0 12px 13px;
+	font-size: 10px;
+	color: #88898B;
+}
+
+.wordpress {
+	font-weight: 500;
+	color: #000000;
+}
+
+.copy-right img {
+	float: right;
+	margin-top: 6px;
+	margin-right: 12px;
+
+}

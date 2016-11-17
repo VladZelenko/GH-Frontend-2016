@@ -1,0 +1,241 @@
+@font-face {
+	font-family: "Tahoma";
+	src: url(fonts/Tahoma/tahoma.ttf);
+    src: url(fonts/Tahoma/tahoma.eot);
+    src: url(fonts/Tahoma/tahoma.woff);
+}
+
+@font-face {
+	font-family: "Helvetica";
+	src: url(fonts/Helveticaneueltpro/helveticaneueltpro-thex.eot);
+	src: url(fonts/Helveticaneueltpro/helveticaneueltpro-thex.ttf);
+    src: url(fonts/Helveticaneueltpro/helveticaneueltpro-thex.wof);
+	src: url(fonts/Helveticaneueltpro/helveticaneueltpro-thex.otf);
+}
+
+@font-face {
+	font-family: "MyriadProRegular";
+	src: url(fonts/MyriadProRegular/MyriadProRegular.eot);
+	src: url(/fonts/MyriadProRegular/MyriadProRegular.eot?#iefix)format("embedded-opentype"),
+	url(/fonts/MyriadProRegular/MyriadProRegular.woff) format("woff"),
+	url(/fonts/MyriadProRegular/MyriadProRegular.ttf) format("truetype");
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#joint-container {
+    width: 675px;
+    margin: auto;
+}
+
+/*start*/
+p {
+    font-family: "Tahoma";
+    font-size: 10px;
+    color: #003200;
+    line-height: 12px;
+}
+
+header {
+    width: 675px;
+    height: 80px;
+    background: linear-gradient(to bottom, #659800, #7ECB00);
+}
+
+.logo-type {
+    margin: 28px 0 0 35px;
+}
+
+nav {
+    height: 77px;
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 27px 0;
+    font-size: 20px;
+}
+
+.navigation li:first-child {
+    padding-left: 36px;
+}
+
+.navigation li a {
+    font-family: "MyriadProRegular";
+    text-decoration: none;
+    color: #003200;
+}
+
+.arrowcopy {
+    padding: 0 25px;
+}
+
+.intro {
+    height: 191px;
+    background: linear-gradient(to right, #EFEFFC, #EFEFFC);
+}
+
+.flask {
+    float: left;
+}
+
+h2 {
+    padding: 26px 0;
+    font-family: "Helvetica";
+    font-size: 32px;
+    font-weight: 100;
+    color: #2F663F;
+    overflow: hidden;
+}
+
+h2>span {
+    font-family: "Helvetica";
+    font-weight: 700;
+    color: #003200;
+}
+
+.intro p {
+    padding: 0px 33px 17px 43px;
+    overflow: hidden;
+}
+
+.intro p>span {
+    display: block;
+    color: #6CA700;
+}
+
+.intro a {
+    padding-left: 46px;
+}
+
+.records {
+    height: 261px;
+    width: auto;
+}
+
+.records p>span {
+    display: block;
+    font-family: "Tahoma";
+    color: #6CA700;
+}
+
+.about-lab {
+    float: left;
+    width: 259px;
+    margin-top: 20px;
+    border-right: 1px solid #EFEFFC;
+}
+
+h3 {
+    padding: 0 0 4px 27px;
+    font-family: "MyriadProRegular";
+    font-size: 20px;
+    color: #002F00;
+}
+
+.about-lab p {
+    padding: 21px 37px 0 26px;    
+}
+
+.link-lab {
+    margin-bottom: 20px;   
+}
+
+.about-lab a {
+    padding-left: 27px;
+}
+
+.poster-container {
+    padding-left: 20px;
+    overflow: hidden
+}
+
+.poster {
+    float: left;
+    padding: 2px 21px 15px 5px;
+}
+
+.content-poster {
+    margin: 18px 11px 16px 5px;
+    overflow: hidden;
+}
+
+article h3 {
+    padding-bottom: 25px;    
+}
+
+.about-border {
+    border-bottom: 1px solid #EFEFFC;
+}
+
+footer {
+    padding: 27px 0 0 27px;
+    border-top: 5px solid #EFEFFC;
+    font-family: "Tahoma";
+    font-size: 10px;
+    color: #003200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
