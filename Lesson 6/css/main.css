@@ -125,6 +125,7 @@ ul.top-nav {
     top: 23px;
     background: url("../img/rounded-rectangle-1-copy.png") no-repeat;
 }
+
 .site-explore-button a::before {
     content: 'Explore';
     display: block;
@@ -164,6 +165,7 @@ ul.top-nav {
     margin-left: 50px;
 
 }
+
 .services ul li  img {
     display: block;
     margin-bottom: 31px;
@@ -177,6 +179,7 @@ ul.top-nav {
     line-height: 33px;
     text-align: center;
 }
+
 .services ul li p {
     width: 231px;
     padding-top: 35px;
@@ -203,6 +206,7 @@ ul.top-nav {
 .nav-portfolio {
     margin-bottom: 77px;
 }
+
 .nav-portfolio  li {
     display: inline-block;
     padding-right: 61px;
@@ -227,7 +231,10 @@ ul.top-nav {
 }
 
 .list-pojects {
-   margin-bottom: 79px;
+    display: block;
+    min-width: 1200px;
+    margin-bottom: 79px;
+
 }
 
 .list-pojects li {
@@ -376,18 +383,21 @@ form.feedback {
     line-height: 33px;
     color: #ffffff;
 }
+
 .contact-informations {
     float: right;
     width: 201px;
     margin-top: 87px;
     color: #2c3e50;
 }
+
 .contact-informations ul li {
     margin-bottom: 45px;
     font-size: 16px;
     font-weight: 700;
     line-height: 33px;
 }
+
 .contact-informations span {
     display: block;
     font-size: 20px;
@@ -413,12 +423,14 @@ footer.footer {
     margin-left: 155px;
     margin-top: 75px;
 }
+
 .test-4444 span {
     display: block;
     width: 150px;
     margin-top: 38px;
     color: #ffffff;
 }
+
 .test-4444 ul li {
     display: inline-block;
 }
