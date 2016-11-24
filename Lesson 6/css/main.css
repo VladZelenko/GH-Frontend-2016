@@ -1,0 +1,388 @@
+@font-face {
+    font-family: "Droid" sans-serif;
+    src: url("../fonts/droid-sans/droidsans.eot");
+    src: url("../fonts/droid-sans/droidsans.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/droid-sans/droidsans.woff") format("woff"),
+         url("../fonts/droid-sans/droidsans.ttf") format("truetype"),
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Droid" serif;
+    src: url("../fonts/droid-serif/droidserif.eot");
+    src: url("../fonts/droid-serif/droidserif.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/droid-serif/droidserif.woff") format("woff"),
+         url("../fonts/droid-serif/droidserif.ttf") format("truetype"),
+    font-weight: normal;
+    font-style: normal;
+}
+/*------------------розібратись зі шрифтами, а то знову якась біда---------------*/
+body {
+    background: url(../img/background.png);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 4919px;
+    z-index: 1;
+    font-family: "Droid Sans";
+}
+
+p {
+    font-family: "Droid Sans";
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+}
+
+li {
+    /*    list-style: none;*/
+}
+/*---------------------------Header-------------------------------*/
+.first-bg {
+    background: url("../img/header-background-2.png");
+    background-size: 100%;
+    width: 100%;
+    height: 777px;
+    margin: 0;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 47px;
+    overflow: hidden;
+}
+
+.clear {
+    overflow: hidden;
+    margin-bottom: 195px;
+}
+
+.logotype {
+    float: left;
+    width: 140px;
+    height: 52px;
+    overflow: hidden; 
+}
+
+ul.top-nav {
+   float: right;
+}
+
+.top-nav li {
+    display: inline-block;
+}
+
+.top-nav li a {
+    padding: 0 17px;
+    height: 45px;
+    line-height: 45px;
+}
+
+.top-nav li a:hover {
+    background: #ffffff;
+    color: #000000;
+    transition: 0.5s ease-in-out;
+}
+
+.site-description  {
+    display: block;
+    margin-bottom: 180px;
+    font-size: 57px;
+    font-weight: 700;
+    line-height: 31px;
+    color: #ffffff;
+}
+
+.site-description>span {
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+
+.site-explore-button {
+    width: 60px;
+    height: 60px;
+    margin-left: 480px;
+    background: #2ecc71;
+    border-radius: 50%;
+}
+
+.site-explore-button a::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 19px;    
+    border-radius: 50%;
+    position: relative;
+    left: 18px;
+    top: 23px;
+    background: url("../img/rounded-rectangle-1-copy.png") no-repeat;
+}
+.site-explore-button a::before {
+    content: 'Explore';
+    display: block;
+    position: absolute;
+    top: 680px;
+    left: 640px;
+    font-size: 27px;
+}
+/*----------------------------About---------------------------------------*/
+.second-bg {
+    width: 100%;
+    height: 1153px;
+    background-color: #34495e;
+}
+
+.container>h3 {
+    margin-top: 125px;
+    margin-bottom: 69px;
+    font-size: 45px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.container>p {
+    width: 758px;
+    height: 225px;
+    margin: 0 auto 137px auto;
+    font-size: 24px;
+    line-height: 33px;
+    overflow: hidden;
+}
+
+.services ul li {
+    width: 200px;
+    display: inline-block;
+    margin-right: 80px;
+    margin-left: 50px;
+
+}
+.services ul li  img {
+    display: block;
+    margin-bottom: 31px;
+    margin-left: 38px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.services ul li a {
+    font-size: 26px;
+    line-height: 33px;
+    text-align: center;
+}
+.services ul li p {
+    width: 231px;
+    padding-top: 35px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+/*----------------------------Portfolio-------------------------------------*/
+.portfolio {
+    width: 100%;
+    height: 1046px;
+    background-color: #FFFFFF;
+}
+
+.third-bg-box>h3 {
+    margin: 124px auto 76px auto;
+    color: #2c3e50;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 31px;
+    text-align: center;
+}
+
+.nav-portfolio {
+    margin-bottom: 77px;
+}
+.nav-portfolio  li {
+    display: inline-block;
+    padding-right: 61px;
+}
+
+.nav-portfolio  li a {
+    color: #2c3e50;
+    font-size: 30px;
+    line-height: 31px;
+}
+
+.nav-portfolio  li:nth-child(2) a {
+    width: 130px;
+    height: 47px;
+    line-height: 47px;
+    background: #2ecc71;
+    border-radius: 20px;
+}
+
+.test-11 {
+    text-align: center;
+}
+
+.list-pojects {
+     margin-bottom: 79px;
+}
+
+.list-pojects li {
+    display: inline-block;
+    margin: 38px;
+    border-top: 10px solid #ffffff;
+    border-bottom: 9px solid #ffffff;
+    border-left: 11px solid #ffffff;
+    border-right: 11px solid #ffffff;
+    box-shadow: 0 0 0 1px #E9E9E9;
+}
+
+/*------------------Team-----------------------------*/
+.four-bg-box {
+    width: 100%;
+    height: 907px;
+    background-color: #2980b9;
+}
+
+.four-bg-box>h3 {
+    padding-top: 123px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 31px;
+}
+
+.test-99999 {
+    width: 700px;
+    margin: 76px auto 106px auto;
+    overflow: hidden;
+}
+
+.test-99999 ul li:first-child {
+    float: left;
+}
+
+.test-99999 ul li:last-child {
+    float: right;
+}
+
+.test-99999 ul li  img {
+    display: block;
+    margin-bottom: 31px;
+    margin-left: 38px;
+    margin-right: 40px;
+    text-align: center;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+}
+
+.test-99999 ul li a {
+    font-size: 26px;
+    line-height: 33px;
+    text-align: center;
+}
+
+.test-99999 ul li p {
+    width: 299px;
+    padding-top: 35px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.fa::before {
+    content: '';
+    display: block;
+    padding-top: 51px;
+    text-indent: 20px;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.test-99999 ul li a:last-child {
+    display: block;
+    float: left;
+    margin-left: 80px; 
+}
+/*----------------------------Contact-------------*/
+
+.five-bg-box {
+    width: 100%;
+    height: 860px;
+}
+
+.five-bg-box>h3 {
+    margin-top: 122px;
+    text-align: center;
+    color: #2c3e50;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 31px;
+}
+
+.test-test-1 {
+    width: 685px;
+    margin: 67px auto 272px auto;
+}
+
+.test-test-1>p {
+    padding-left: 10px;
+    color: #2c3e50;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+}
+
+form.feedback {
+    float: left;
+    margin-top: 93px;
+}
+
+.feedback ul li {
+    margin-top: 55px;
+}
+
+.feedback input {
+    outline: none;
+    border-bottom: 2px solid green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 282px;
+    background-color: #2c3e50;
+}
