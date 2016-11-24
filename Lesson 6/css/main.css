@@ -93,7 +93,7 @@ ul.top-nav {
 
 .site-description  {
     display: block;
-    margin-bottom: 180px;
+    margin-bottom: 170px;
     font-size: 57px;
     font-weight: 700;
     line-height: 31px;
@@ -131,7 +131,7 @@ ul.top-nav {
     display: block;
     position: absolute;
     top: 680px;
-    left: 640px;
+    left: 620px;
     font-size: 27px;
 }
 /*----------------------------About---------------------------------------*/
@@ -158,7 +158,7 @@ ul.top-nav {
     overflow: hidden;
 }
 
-.services ul li {
+.services li {
     width: 200px;
     display: inline-block;
     margin-right: 80px;
@@ -166,7 +166,7 @@ ul.top-nav {
 
 }
 
-.services ul li  img {
+.services li  img {
     display: block;
     margin-bottom: 31px;
     margin-left: 38px;
@@ -174,13 +174,13 @@ ul.top-nav {
     text-align: center;
 }
 
-.services ul li a {
+.services li a {
     font-size: 26px;
     line-height: 33px;
     text-align: center;
 }
 
-.services ul li p {
+.services li p {
     width: 231px;
     padding-top: 35px;
     font-size: 20px;
@@ -233,6 +233,7 @@ ul.top-nav {
 .list-pojects {
     display: block;
     min-width: 1200px;
+    max-width: 1400px;
     margin-bottom: 79px;
 
 }
@@ -247,6 +248,38 @@ ul.top-nav {
     box-shadow: 0 0 0 1px #E9E9E9;
 }
 
+.list-pojects li a {
+    display: block;
+    position: absolute;
+    margin-left: 116px;
+    margin-top: -96px;
+    width: 110px;
+    height: 32px;
+    border: 2px solid #ffffff;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    opacity: 0.3;
+}
+
+.list-pojects li a::after {
+    content: 'Project Title';
+    display: block;
+    width: 204px;
+    height: 35px;
+    margin-top: -90px;
+    margin-left: -45px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 31px;
+    opacity: 0.6;
+}
+
+.list-pojects li a:hover {
+    transition: 0.5s ease-in-out 0.2s;
+    opacity: 1;
+}
 /*------------------Team-----------------------------*/
 .four-bg-box {
     width: 100%;
@@ -269,15 +302,15 @@ ul.top-nav {
     overflow: hidden;
 }
 
-.test-99999 ul li:first-child {
+.test-99999  li:first-child {
     float: left;
 }
 
-.test-99999 ul li:last-child {
+.test-99999  li:last-child {
     float: right;
 }
 
-.test-99999 ul li  img {
+.test-99999  li  img {
     display: block;
     margin-bottom: 31px;
     margin-left: 38px;
@@ -287,13 +320,13 @@ ul.top-nav {
     border-radius: 50%;
 }
 
-.test-99999 ul li a {
+.test-99999  li a {
     font-size: 26px;
     line-height: 33px;
     text-align: center;
 }
 
-.test-99999 ul li p {
+.test-99999  li p {
     width: 299px;
     padding-top: 35px;
     font-size: 20px;
@@ -310,7 +343,7 @@ ul.top-nav {
     font-size: 40px;
 }
 
-.test-99999 ul li a:last-child {
+.test-99999  li a:last-child {
     display: block;
     float: left;
     margin-left: 80px;
@@ -322,7 +355,7 @@ ul.top-nav {
     height: 860px;
 }
 
-.five-bg-box>h3 {
+.test-test-1>h3 {
     margin-top: 122px;
     text-align: center;
     color: #2c3e50;
@@ -333,12 +366,13 @@ ul.top-nav {
 
 .test-test-1 {
     width: 685px;
-    margin: 67px auto 272px auto;
+    margin: 0 auto 272px auto;
     overflow: hidden;
 }
 
 .test-test-1>p {
     padding-left: 10px;
+    margin-top: 67px;
     color: #2c3e50;
     font-size: 26px;
     font-weight: 700;
@@ -391,7 +425,7 @@ form.feedback {
     color: #2c3e50;
 }
 
-.contact-informations ul li {
+.contact-informations  li {
     margin-bottom: 45px;
     font-size: 16px;
     font-weight: 700;
@@ -404,7 +438,7 @@ form.feedback {
     font-weight: 400;
     line-height: 33px;
 }
-.contact-informations ul li a {
+.contact-informations  li a {
     display: block;
     font-size: 20px;
     font-weight: 400;
@@ -420,17 +454,41 @@ footer.footer {
 }
 
 .test-4444 {
+    display: block;
     margin-left: 155px;
     margin-top: 75px;
+    width: 824px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.test-4444>a {
+    padding-bottom: 5px;
+    margin-bottom: 38px;
 }
 
 .test-4444 span {
     display: block;
     width: 150px;
-    margin-top: 38px;
+    padding-bottom: 5px;
     color: #ffffff;
 }
 
 .test-4444 ul li {
     display: inline-block;
+}
+
+.test-4444 ul li:first-child {
+    margin-right: 130px;
+}
+
+.test-4444 ul li span {
+    display: block;
+}
+
+.test-4444 ul {
+    float: right;
+    position: relative;
+    bottom: 90px;
+    right: 80px;
 }
