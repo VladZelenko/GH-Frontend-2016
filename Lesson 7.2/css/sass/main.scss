@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+$primary_font_color: #ffffff;
+$secondary_font_color: #3677fd;;
+$p_color: #5a5a5a;
+
+@mixin size_block($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin font($color, $size, $weight, $l_height) {
+	color: $color;
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $l_height;
+}
+
+@mixin text($align, $transform){
+	text-align: $align;
+	text-transform: $transform;
+}
+
+@mixin full_text($align, $transform, $decoration){
+	text-align: $align;
+	text-transform: $transform;
+	text-decoration: $decoration;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+header.hero {
+	@include size_block(100%, 872px);
+	background: linear-gradient(51deg, #3695ff 0%, #3564fc 100%);
+
+	.cookies {
+		display: block;
+		@include size_block(100%, 72px);
+		text-align: center;
+		line-height: 72px;
+		background: rgba(0, 0, 0, .5);
+
+		.wrapper {
+			@include size_block(550px, 72px);
+			margin: 0 auto;
+			overflow: hidden;
+		}
+
+		p {
+			color: #ffffff;
+			float: left;
+		}
+
+		a {
+			display: block;
+			float: right;
+			margin: 20px 0 0 10px;
+			@include size_block(112px, 30px);
+			@include font(#194277 ,12px, 700, 30px);
+			background: #ffffff;
+			border-radius: 15px;
+			text-decoration: none;
+		}
+	}
+
+	.box-wrapper {
+		@include size_block(1250px, 800px);
+
+		span {
+			display: block;
+			margin: 84px auto 0 auto;
+			@include size_block(147px, 147px);
+			background: #ffffff;
+			border: 3px solid #ffffff;
+			border-radius: 50%;
+			box-shadow: 0 0 0 10px rgba(255, 255, 255, .2), 0 0 0 20px rgba(255, 255, 255, .1);
+		}
+
+		h1 {
+			@include size_block(870px, 100px);
+			margin: 0 auto;
+			padding-top: 73px;
+			@include font($primary_font_color, 50px, 900, 60px);
+			@include text(center, uppercase);
+		}
+		p {
+			width: 765px;
+			@include font($primary_font_color, 16px, 300, 35px);
+			margin: 0 auto;
+			padding-top: 42px;
+			@include text(center, uppercase);
+		}
+
+		a.btn {
+			display: block;
+			margin: 75px auto 0 auto;
+			@include size_block(204px ,55px);
+			@include font($secondary_font_color, 16px, 700, 55px);
+			@include full_text(center, uppercase, none);
+			background: #ffffff;
+			border-radius: 27px;
+
+			&::after {
+				content: ' ';
+				display: block;
+				margin: 92px auto 0 auto;
+				@include size_block(19px, 32px);
+				line-height: 32px;
+				background: url("../img/scroll-down.png") no-repeat;
+			}
+		}
+	}
+}
+
+.about {
+	@include size_block(100%, 410px);
+	background: none;
+
+	.wrapper {
+		@include size_block(1067px, 192px);
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	h2 {
+		padding-top: 98px;
+		@include font($secondary_font_color, 50px, 300, 35px);
+	}
+
+	p {
+		padding-top: 69px;
+		@include font($p_color, 16px, 400, 35px);
+	}
+}
+
+.services {
+	@include size_block(100%, 1145px);
+	background: #f1f8ff;
+
+	.wrapper {
+		@include size_block(1136px, 935px);
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	h2 {
+		padding-top: 98px;
+		@include font($secondary_font_color, 50px, 300, 35px);
+	}
+
+	ul {
+		margin-top: 112px;
+	}
+
+	ul li {
+		display: inline-block;
+		width: 335px;
+		margin-left: 40px;
+	}
+
+	h3 {
+		padding-top: 61px;
+		@include font($secondary_font_color, 24px, 700, 24px);
+		text-transform: uppercase;
+	}
+	ul p {
+		padding-top: 33px;
+		@include font($p_color, 16px, 400, 35px);
+	}
+}

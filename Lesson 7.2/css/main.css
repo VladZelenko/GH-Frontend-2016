@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+/* line 30, sass/main.scss */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 34, sass/main.scss */
+header.hero {
+  width: 100%;
+  height: 872px;
+  background: linear-gradient(51deg, #3695ff 0%, #3564fc 100%);
+}
+/* line 38, sass/main.scss */
+header.hero .cookies {
+  display: block;
+  width: 100%;
+  height: 72px;
+  text-align: center;
+  line-height: 72px;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 45, sass/main.scss */
+header.hero .cookies .wrapper {
+  width: 550px;
+  height: 72px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 51, sass/main.scss */
+header.hero .cookies p {
+  color: #ffffff;
+  float: left;
+}
+/* line 56, sass/main.scss */
+header.hero .cookies a {
+  display: block;
+  float: right;
+  margin: 20px 0 0 10px;
+  width: 112px;
+  height: 30px;
+  color: #194277;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  text-decoration: none;
+}
+/* line 68, sass/main.scss */
+header.hero .box-wrapper {
+  width: 1250px;
+  height: 800px;
+}
+/* line 71, sass/main.scss */
+header.hero .box-wrapper span {
+  display: block;
+  margin: 84px auto 0 auto;
+  width: 147px;
+  height: 147px;
+  background: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2), 0 0 0 20px rgba(255, 255, 255, 0.1);
+}
+/* line 81, sass/main.scss */
+header.hero .box-wrapper h1 {
+  width: 870px;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 73px;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 88, sass/main.scss */
+header.hero .box-wrapper p {
+  width: 765px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 35px;
+  margin: 0 auto;
+  padding-top: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 96, sass/main.scss */
+header.hero .box-wrapper a.btn {
+  display: block;
+  margin: 75px auto 0 auto;
+  width: 204px;
+  height: 55px;
+  color: #3677fd;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  border-radius: 27px;
+}
+/* line 105, sass/main.scss */
+header.hero .box-wrapper a.btn::after {
+  content: ' ';
+  display: block;
+  margin: 92px auto 0 auto;
+  width: 19px;
+  height: 32px;
+  line-height: 32px;
+  background: url("../img/scroll-down.png") no-repeat;
+}
+
+/* line 117, sass/main.scss */
+.about {
+  width: 100%;
+  height: 410px;
+  background: none;
+}
+/* line 121, sass/main.scss */
+.about .wrapper {
+  width: 1067px;
+  height: 192px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 127, sass/main.scss */
+.about h2 {
+  padding-top: 98px;
+  color: #3677fd;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 35px;
+}
+/* line 132, sass/main.scss */
+.about p {
+  padding-top: 69px;
+  color: #5a5a5a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+/* line 138, sass/main.scss */
+.services {
+  width: 100%;
+  height: 1145px;
+  background: #f1f8ff;
+}
+/* line 142, sass/main.scss */
+.services .wrapper {
+  width: 1136px;
+  height: 935px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 148, sass/main.scss */
+.services h2 {
+  padding-top: 98px;
+  color: #3677fd;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 35px;
+}
+/* line 153, sass/main.scss */
+.services ul {
+  margin-top: 112px;
+}
+/* line 157, sass/main.scss */
+.services ul li {
+  display: inline-block;
+  width: 335px;
+  margin-left: 40px;
+}
+/* line 163, sass/main.scss */
+.services h3 {
+  padding-top: 61px;
+  color: #3677fd;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+/* line 168, sass/main.scss */
+.services ul p {
+  padding-top: 33px;
+  color: #5a5a5a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+}

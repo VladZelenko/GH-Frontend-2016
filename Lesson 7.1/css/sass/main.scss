@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+$primary_font_color: #2d3950;
+$secondary_font_color: #ffffff;
+$p_color: #909090;
+
+@mixin font($size, $weight, $l_height) {
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $l_height;
+}
+
+@mixin size_block($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+header {
+	width: 100%;
+	height: 99px;
+	background-color: #f6f9f9;
+
+	.wrapper {
+		width: 1140px;
+		margin: 0 auto;
+
+		h1 {
+			float: left;
+			padding: 24px 0;
+
+			a {
+				color: $primary_font_color;
+				@include font(30px, 700, 20px);
+				text-decoration: none;
+
+				img {
+					padding-right: 5px;
+				}
+			}
+		}
+	}
+}
+
+section.primary-box {
+	background: url("../img/primary.png");
+	width: 100%;
+	height: 100vh;
+
+	h2 {
+		width: 600px;
+		margin: 0 auto;
+		padding: 217px 0 34px 0;
+		color: $secondary_font_color;
+		@include font(120px, 700, 47px);
+		text-align: center;
+		border-bottom: 1px solid #15a4fa;
+	}
+
+	p {
+		padding: 20px 0;
+		color: $secondary_font_color;
+		@include font(20px, 400, 47px);
+		text-align: center;
+	}
+
+	a.call {
+		display: block;
+		margin: 34px auto;
+		@include size_block(178px, 56px);
+		@include font(18px, 400, 56px);
+		text-align: center;
+		text-decoration: none;
+		color: $secondary_font_color;
+		border: 1px solid #15a4fa;
+		border-radius: 2px;
+	}
+
+	a.scroll-down {
+		display: block;
+		margin: 100px auto;
+		@include size_block(20px, 12px);
+		background: url("../img/scroll-down.png") no-repeat;
+	}
+}
+
+section.design {
+	width: 100%;
+	height: 50vh;
+	background: #f6f9f9;
+
+	.wrapper {
+		width: 1101px;
+		margin: 0 auto;
+	}
+
+	h2 {
+		padding-top: 81px;
+		color: #2d3950;
+		font-size: 40px;
+		text-align: center;
+	}
+
+	p {
+		padding-top: 31px;
+		color: $p_color;
+		@include font(20px, 400, 32px);
+		text-align: center;
+	}
+}
+
+section.services {
+	width: 100%;
+	height: 50vh; //чи можна задавати двом маленьким блокам таку висоту, щоб вони займали в сумі висоту 100%?
+	background: #ffffff;
+
+	.wrapper {
+		width: 1067px;
+		margin: 0 auto;
+	}
+
+	ul	li {
+		display: inline-block;
+		margin-left: 35px;
+		width: 310px;
+
+
+		.fa{
+			display: block;
+			margin: 65px auto 0 auto;
+			color: #ffffff;
+			@include size_block(100px, 100px);
+			@include font(40px, 400, 100px);
+			text-align: center;
+			background: linear-gradient(to right, #48baff 50%, #5fc3ff 50%);
+			border-radius: 2px;
+		}
+		.fa-mobile {
+			font-size: 60px;
+		}
+
+		h3 {
+			padding-top: 32px;
+			color: $primary_font_color;
+			font-size: 22px;
+			text-align: center;
+		}
+
+		p {
+			padding-top: 22px;
+			color: $p_color;
+			@include font(15px, 400, 22px);
+			text-align: center;
+		}
+	}
+}
+
+section.portfolio {
+	width: 100%;
+	height: 900px;
+	background: #f6f9f9;
+
+	.wrapper {
+		width: 1140px;
+		margin: 0 auto;
+	}
+	h2 {
+		padding-top: 80px;
+		color: $primary_font_color;
+		font-size: 41px;
+		text-align: center;
+	}
+
+	p {
+		padding: 22px 0 80px 0;
+		color: $p_color;
+		@include font(15px, 400, 23px);
+		text-align: center;
+	}
+//hover - start
+
+	.fa {
+		line-height: 42px;
+		font-size: 15px;
+		color: #ffffff;
+	}
+}
+
+
+.container {
+	position: relative;
+	float: left;
+}
+
+.container, .project-title, .container img {
+	@include size_block(350px, 220px);
+	margin: 0 30px 30px 0;
+}
+
+.project-title, .container img {
+	position: absolute;
+}
+
+.container img {
+	z-index: 0;
+}
+
+.project-title {
+	z-index: 1;
+	background: #15a4fa;
+	transition: all 0.5s ease-in-out 0.1s;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.project-title:hover {
+	opacity: .8;
+}
+
+.project-title a {
+	display: inline-block;
+	position: relative;
+	top: 90px;
+	left: 130px;
+	@include size_block(42px, 42px);
+	color: #ffffff;
+	text-decoration: none;
+	border: 1px solid #ffffff;
+	border-radius: 2px;
+	text-align: center;
+}
+//hover - finish
+section.feedback {
+	width: 100%;
+	height: 700px;
+	background: linear-gradient(rgba(41, 52, 74, 0.8), rgba(41, 52, 74, 0.8)), url("../img/feedback-bg.png");
+
+	.wrapper {
+		width: 555px;
+		margin: 0 auto;
+	}
+
+	h2 {
+		padding-top: 74px;
+		color: $secondary_font_color;
+		font-size: 41px;
+		text-align: center;
+	}
+
+	p {
+		padding-top: 21px;
+		color: $p_color;
+		@include font(15px, 400, 23px);
+		text-align: center;
+	}
+
+	form {
+		padding-top: 51px;
+	}
+
+	input[type="text"], input[type="email"]{
+		margin-top: 20px;
+		padding-left: 21px;
+		width: 555px;
+		height: 62px;
+		color: #ffffff;
+		font-size: 15px;
+		border: 1px solid #999;;
+		border-radius: 2px;
+		background: none;
+	}
+
+	textarea {
+		margin-top: 20px;
+		padding: 26px 0 0 21px;
+		@include size_block(555px, 162px);
+		color: #ffffff;
+		font-size: 15px;
+		border: 1px solid #999;;
+		border-radius: 2px;
+		background: none;
+		resize: none;
+		z-index: 5;
+	}
+	input[type="checkbox"] {
+		margin-top: 35px;
+		background-color: rgba(246, 249, 249, 0.54);
+		border: 1px solid #9aa1ab;
+		border-radius: 2px;
+	}
+
+	label {
+		color: #ffffff;
+		@include font(15px, 400, 17px);
+	}
+	button {
+		float: right;
+		overflow: hidden;
+		margin: 20px -23px 0 0;
+		@include size_block(142px, 47px);
+		color: #ffffff;
+		@include font(18px, 400, 47px);
+		background: none;
+		border: 1px solid #15a4fa;
+		border-radius: 2px;
+	}
+}
+
+footer.footer {
+	width: 100%;
+	height: 90px;
+	background: #f6f9f9;
+
+	.wrapper {
+		width: 1140px;
+		margin: 0 auto;
+		padding-top: 40px;
+		overflow: hidden;
+	}
+	span {
+		float: left;
+		color: $p_color;
+		font-size: 15px;
+	}
+
+	ul {
+		position: relative;
+		bottom: 15px;
+		float: right;
+		overflow: hidden;
+	}
+	ul li {
+		display: inline-block;
+
+		.fa {
+			@include size_block(40px, 40px);
+			color: #ffffff;
+			@include font(15px, 400, 40px);
+			text-align: center;
+			background-color: #15a4fa;
+			border-radius: 2px;
+		}
+	}
+}
