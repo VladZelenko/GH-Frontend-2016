@@ -68,29 +68,33 @@ $btn_secondary_color: #ffffff;
 			text-align: center;
 		}
 	}
+
+	.hero-btn-box {
+		width: 100%;
+	}
+
 	.hero-btn {
-		width: 70%;
+		width: 80%;
 		margin: 40px auto;
+		text-align: center;
 
 		li {
-			display: block;
-			width: 210px;
-			height: 50px;
 			margin: 10px 0;
-			border: 1px solid rgba(255, 255, 255, 0.2);
-			border-radius: 10px;
-			text-align: center;
 
 			a {
 				display: block;
+				width: 210px;
+				margin: 0 auto;
 				color: $primary_font_color;
 				font: 600 16px/50px sans-serif;
+				border: 1px solid rgba(255, 255, 255, 0.2);
+				border-radius: 10px;
 				text-transform: uppercase;
-			}
 
-			&:hover {
-				background: $btn_primary_color;
-				transition: all 0.4s ease-in-out 0.1s
+				&:hover {
+					background: $btn_primary_color;
+					transition: all 0.4s ease-in-out 0.1s
+				}
 			}
 		}
 	}
@@ -116,3 +120,4 @@ $btn_secondary_color: #ffffff;
 		}
 	}
 }
+
