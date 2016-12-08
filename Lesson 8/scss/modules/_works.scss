@@ -1,0 +1,66 @@
+$primary_font_color: #ffffff;
+$secondary_font_color: #3b434c;
+$span_color: #f7600e;
+$btn_primary_color: #f7600e;
+$btn_secondary_color: #ffffff;
+
+//мб треба б винести змінні у окремий файлик і просто його підключати
+
+@media screen and (min-width: 320px) {
+	.works-wrapper {
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+
+		.works-head {
+			color: $secondary_font_color;
+			font: 600 35px/40px sans-serif;
+			text-transform: uppercase;
+
+			span {
+				color: $span_color;
+			}
+		}
+
+		p {
+			margin: 15px 0;
+			font: 400 16px/30px sans-serif;
+		}
+	}
+
+	.list-works {
+
+		li {
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+		img {
+			width: 280px;
+		}
+	}
+
+		.overlay {//ховер на портфолио, зробить
+			display: none;
+		}
+
+		.works-btn-bottom {
+			display: block;
+			width: 210px;
+			height: 50px;
+			margin: 40px auto 0 auto;
+			color: #3b434c;
+			font: 600 16px/50px sans-serif;
+			border: 1px solid rgba(59, 67, 76, 0.2);
+			border-radius: 10px;
+			text-transform: uppercase;
+
+			&:hover {
+				background: $btn_primary_color;
+				color: $btn_secondary_color;
+				transition: all 0.4s ease-in-out 0.1s;
+
+			}
+		}
+	}
+

@@ -1,0 +1,36 @@
+$primary_font_color: #ffffff;
+$secondary_font_color: #3b434c;
+$span_color: #f7600e;
+$btn_primary_color: #f7600e;
+$btn_secondary_color: #ffffff;
+
+//мб треба б винести змінні у окремий файлик і просто його підключати
+
+@media screen and (min-width: 320px) {
+	.footer {
+		width: 100%;
+		min-height: 105px;
+		background: #3b434c;
+	}
+
+	.foot-wrapper {
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+
+		span {
+			display: block;
+			margin-bottom: 10px;
+			color: #ffffff;
+		}
+		a {
+			color: $primary_font_color;
+			text-transform: uppercase;
+		}
+
+		img {
+			position: relative;
+			top: 2px;
+		}
+	}
+}

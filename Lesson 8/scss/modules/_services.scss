@@ -1,0 +1,40 @@
+$primary_font_color: #ffffff;
+$secondary_font_color: #3b434c;
+$span_color: #f7600e;
+$btn_primary_color: #f7600e;
+$btn_secondary_color: #ffffff;
+
+//мб треба б винести змінні у окремий файлик і просто його підключати
+
+@media screen and (min-width: 320px) {
+	.services-wrapper {
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			padding: 20px 0;
+		}
+
+		.img-box {
+			width: 151px;
+			height: 151px;
+			margin: 0 auto;
+			border: 1px solid rgba(59, 67, 76, 0.3);
+			border-radius: 50%;
+			text-align: center;
+			line-height: 191px;
+		}
+
+		h3 {
+			margin: 25px 0 10px 0;
+			text-transform: uppercase;
+			font: 600 16px sans-serif;
+		}
+
+		p {
+			font: 400 14px/26px sans-serif;
+		}
+	}
+}

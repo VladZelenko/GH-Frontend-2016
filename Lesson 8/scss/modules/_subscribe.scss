@@ -1,0 +1,43 @@
+$primary_font_color: #ffffff;
+$secondary_font_color: #3b434c;
+$span_color: #f7600e;
+$btn_primary_color: #f7600e;
+$btn_secondary_color: #ffffff;
+
+//мб треба б винести змінні у окремий файлик і просто його підключати
+
+@media screen and (min-width: 320px) {
+	.subscribe {
+		width: 100%;
+		height: 270px;
+		background: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("img/subscribe-bg.png")
+	}
+
+	.subscribe-wrapper {
+		width: 95%;
+		margin: 0 auto;
+
+		input[type="email"] {
+			display: block;
+			width: 240px;
+			height: 35px;
+			margin: 0 auto;
+			padding-left: 10px;
+			background: $primary_font_color;
+			border: none;
+			border-radius: 10px;
+		}
+		button {
+			display: block;
+			margin: 30px auto;
+			width: 90px;
+			height: 35px;
+			color: $primary_font_color;
+			background: #f7600e;
+			border: none;
+			border-radius: 10px;
+			text-transform: uppercase;
+			cursor: pointer;
+		}
+	}
+}

@@ -1,0 +1,78 @@
+$primary_font_color: #ffffff;
+$secondary_font_color: #3b434c;
+$span_color: #f7600e;
+$btn_primary_color: #f7600e;
+$btn_secondary_color: #ffffff;
+
+//мб треба б винести змінні у окремий файлик і просто його підключати
+
+@media screen and (min-width: 320px) {
+	.feedback {
+		width: 100%;
+		height: 800px;
+		background: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("img/feedback-bg.png");
+	}
+
+	.feedback-wrapper {
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+
+		h2 {
+			color: $primary_font_color;
+			font: 600 35px sans-serif;
+			text-transform: uppercase;
+
+			span {
+				color: $span_color;
+			}
+		}
+
+		p {
+			margin: 15px 0 50px 0;
+			color: $primary_font_color;
+			font: 400 16px/30px sans-serif;
+		}
+	}
+
+	.feedback-form {
+		li {
+			margin-top: 10px;
+		}
+
+		input {
+			margin-top: 10px;
+			padding: 0 0 0 10px;
+			width: 90%;
+			height: 40px;
+			font: 400 14px sans-serif;
+			background: #ffffff;
+			border: none;
+			border-radius: 10px;
+		}
+
+		textarea {
+			padding: 10px 0 0 10px;
+			width: 90%;
+			height: 200px;
+			font: 400 14px sans-serif;
+			background: #ffffff;
+			border: none;
+			border-radius: 10px;
+			resize: none;
+		}
+
+		button {
+			margin-top: 30px;
+			width: 210px;
+			height: 50px;
+			color: $btn_secondary_color;
+			font: 600 16px sans-serif;
+			background: $btn_primary_color;
+			border: none;
+			border-radius: 10px;
+			text-transform: uppercase;
+			cursor: pointer;
+		}
+	}
+}

@@ -1,6 +1,4 @@
-/*******************Final file**************/
-/* Reset */
-/* line 1, scss/base/_reset.scss */
+/* line 5, scss/base/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,38 +21,518 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 22, scss/base/_reset.scss */
+/* line 26, scss/base/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 26, scss/base/_reset.scss */
+/* line 30, scss/base/_reset.scss */
 body {
   line-height: 1;
 }
 
-/* line 29, scss/base/_reset.scss */
+/* line 33, scss/base/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 32, scss/base/_reset.scss */
+/* line 36, scss/base/_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 35, scss/base/_reset.scss */
+/* line 39, scss/base/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 40, scss/base/_reset.scss */
+/* line 44, scss/base/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* Base */
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+}
+/* line 8, scss/base/_base.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 12, scss/base/_base.scss */
+li {
+  list-style: none;
+}
+
+/* line 16, scss/base/_base.scss */
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 21, scss/base/_base.scss */
+h1, h2, h3, h4, p {
+  color: #3b434c;
+}
+
+/* line 25, scss/base/_base.scss */
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+/* line 29, scss/base/_base.scss */
+header, footer {
+  padding: 50px 0;
+}
+
+/* line 33, scss/base/_base.scss */
+section {
+  padding: 100px 0;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 9, scss/modules/_header.scss */
+  .hero {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/head-bg.png") no-repeat;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  /* line 15, scss/modules/_header.scss */
+  .header {
+    width: 87%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  /* line 20, scss/modules/_header.scss */
+  .header h1 {
+    float: left;
+    font: 400 16px/17px sans-serif;
+  }
+  /* line 24, scss/modules/_header.scss */
+  .header h1 a {
+    color: #ffffff;
+    font: 700 16px sans-serif;
+  }
+  /* line 28, scss/modules/_header.scss */
+  .header h1 span {
+    color: #f7600e;
+  }
+  /* line 33, scss/modules/_header.scss */
+  .header .top-menu {
+    position: relative;
+    bottom: 10px;
+    float: right;
+    color: #ffffff;
+  }
+  /* line 40, scss/modules/_header.scss */
+  .header .fa-bars {
+    padding-left: 15px;
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+  }
+
+  /* line 48, scss/modules/_header.scss */
+  .hero-content {
+    width: 95%;
+    margin: 0 auto;
+  }
+  /* line 52, scss/modules/_header.scss */
+  .hero-content h2 {
+    margin: 25px 0 40px 0;
+    color: #ffffff;
+    font: 700 45px sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  /* line 60, scss/modules/_header.scss */
+  .hero-content h2 span {
+    color: #f7600e;
+  }
+  /* line 65, scss/modules/_header.scss */
+  .hero-content p {
+    color: #ffffff;
+    font: 400 20px/40px sans-serif;
+    text-align: center;
+  }
+
+  /* line 71, scss/modules/_header.scss */
+  .hero-btn {
+    width: 70%;
+    margin: 40px auto;
+  }
+  /* line 75, scss/modules/_header.scss */
+  .hero-btn li {
+    display: block;
+    width: 210px;
+    height: 50px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-align: center;
+  }
+  /* line 84, scss/modules/_header.scss */
+  .hero-btn li a {
+    display: block;
+    color: #ffffff;
+    font: 600 16px/50px sans-serif;
+    text-transform: uppercase;
+  }
+  /* line 91, scss/modules/_header.scss */
+  .hero-btn li:hover {
+    background: #f7600e;
+    transition: all 0.4s ease-in-out 0.1s;
+  }
+
+  /* line 98, scss/modules/_header.scss */
+  .scroll-down {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    text-align: center;
+  }
+  /* line 107, scss/modules/_header.scss */
+  .scroll-down:hover {
+    background: #f7600e;
+    transition: all 0.4s ease-in-out 0.1s;
+  }
+  /* line 112, scss/modules/_header.scss */
+  .scroll-down .fa-angle-down {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 320px) {
+  /* line 10, scss/modules/_services.scss */
+  .services-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* line 15, scss/modules/_services.scss */
+  .services-wrapper li {
+    display: inline-block;
+    padding: 20px 0;
+  }
+  /* line 20, scss/modules/_services.scss */
+  .services-wrapper .img-box {
+    width: 151px;
+    height: 151px;
+    margin: 0 auto;
+    border: 1px solid rgba(59, 67, 76, 0.3);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 191px;
+  }
+  /* line 30, scss/modules/_services.scss */
+  .services-wrapper h3 {
+    margin: 25px 0 10px 0;
+    text-transform: uppercase;
+    font: 600 16px sans-serif;
+  }
+  /* line 36, scss/modules/_services.scss */
+  .services-wrapper p {
+    font: 400 14px/26px sans-serif;
+  }
+}
+@media screen and (min-width: 320px) {
+  /* line 10, scss/modules/_subscribe.scss */
+  .subscribe {
+    width: 100%;
+    height: 270px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/subscribe-bg.png");
+  }
+
+  /* line 16, scss/modules/_subscribe.scss */
+  .subscribe-wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+  /* line 20, scss/modules/_subscribe.scss */
+  .subscribe-wrapper input[type="email"] {
+    display: block;
+    width: 240px;
+    height: 35px;
+    margin: 0 auto;
+    padding-left: 10px;
+    background: #ffffff;
+    border: none;
+    border-radius: 10px;
+  }
+  /* line 30, scss/modules/_subscribe.scss */
+  .subscribe-wrapper button {
+    display: block;
+    margin: 30px auto;
+    width: 90px;
+    height: 35px;
+    color: #ffffff;
+    background: #f7600e;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 320px) {
+  /* line 10, scss/modules/_works.scss */
+  .works-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* line 15, scss/modules/_works.scss */
+  .works-wrapper .works-head {
+    color: #3b434c;
+    font: 600 35px/40px sans-serif;
+    text-transform: uppercase;
+  }
+  /* line 20, scss/modules/_works.scss */
+  .works-wrapper .works-head span {
+    color: #f7600e;
+  }
+  /* line 25, scss/modules/_works.scss */
+  .works-wrapper p {
+    margin: 15px 0;
+    font: 400 16px/30px sans-serif;
+  }
+
+  /* line 33, scss/modules/_works.scss */
+  .list-works li {
+    display: inline-block;
+    margin: 15px 0;
+  }
+  /* line 38, scss/modules/_works.scss */
+  .list-works img {
+    width: 280px;
+  }
+
+  /* line 43, scss/modules/_works.scss */
+  .overlay {
+    display: none;
+  }
+
+  /* line 47, scss/modules/_works.scss */
+  .works-btn-bottom {
+    display: block;
+    width: 210px;
+    height: 50px;
+    margin: 40px auto 0 auto;
+    color: #3b434c;
+    font: 600 16px/50px sans-serif;
+    border: 1px solid rgba(59, 67, 76, 0.2);
+    border-radius: 10px;
+    text-transform: uppercase;
+  }
+  /* line 58, scss/modules/_works.scss */
+  .works-btn-bottom:hover {
+    background: #f7600e;
+    color: #ffffff;
+    transition: all 0.4s ease-in-out 0.1s;
+  }
+}
+@media screen and (min-width: 320px) {
+  /* line 10, scss/modules/_reviews.scss */
+  .reviews {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/reviews-bg.png") no-repeat;
+  }
+
+  /* line 16, scss/modules/_reviews.scss */
+  .reviews-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* line 21, scss/modules/_reviews.scss */
+  .reviews-wrapper img {
+    border-radius: 50%;
+  }
+  /* line 24, scss/modules/_reviews.scss */
+  .reviews-wrapper p {
+    padding: 10px 0 20px 0;
+    color: #ffffff;
+    font: italic 25px sans-serif;
+  }
+  /* line 29, scss/modules/_reviews.scss */
+  .reviews-wrapper h4 {
+    color: #ffffff;
+    font: 600 18px sans-serif;
+  }
+}
+@media screen and (min-width: 320px) {
+  /* line 10, scss/modules/_team.scss */
+  .team {
+    width: 100%;
+  }
+
+  /* line 14, scss/modules/_team.scss */
+  .team-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* line 19, scss/modules/_team.scss */
+  .team-wrapper h2 {
+    font: 600 35px sans-serif;
+    text-transform: uppercase;
+  }
+  /* line 23, scss/modules/_team.scss */
+  .team-wrapper h2 span {
+    color: #f7600e;
+  }
+  /* line 28, scss/modules/_team.scss */
+  .team-wrapper p {
+    padding: 15px 0 50px 0;
+    font: 400 16px/30px sans-serif;
+  }
+
+  /* line 36, scss/modules/_team.scss */
+  .team-person img {
+    width: 90%;
+  }
+  /* line 40, scss/modules/_team.scss */
+  .team-person h3, .team-person p, .team-person .fa {
+    color: #9da1a5;
+  }
+  /* line 45, scss/modules/_team.scss */
+  .team-person h3 {
+    margin: 20px 0 0 0;
+    font: 600 25px sans-serif;
+    text-transform: uppercase;
+  }
+  /* line 51, scss/modules/_team.scss */
+  .team-person .fa {
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 30px;
+    background: #9da1a5;
+    border-radius: 50%;
+  }
+
+  /* line 66, scss/modules/_team.scss */
+  .social-icons li {
+    display: inline-block;
+    padding-left: 20px;
+  }
+  /* line 70, scss/modules/_team.scss */
+  .social-icons li:first-child {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 320px) {
+  /* line 10, scss/modules/_feedback.scss */
+  .feedback {
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/feedback-bg.png");
+  }
+
+  /* line 16, scss/modules/_feedback.scss */
+  .feedback-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* line 21, scss/modules/_feedback.scss */
+  .feedback-wrapper h2 {
+    color: #ffffff;
+    font: 600 35px sans-serif;
+    text-transform: uppercase;
+  }
+  /* line 26, scss/modules/_feedback.scss */
+  .feedback-wrapper h2 span {
+    color: #f7600e;
+  }
+  /* line 31, scss/modules/_feedback.scss */
+  .feedback-wrapper p {
+    margin: 15px 0 50px 0;
+    color: #ffffff;
+    font: 400 16px/30px sans-serif;
+  }
+
+  /* line 39, scss/modules/_feedback.scss */
+  .feedback-form li {
+    margin-top: 10px;
+  }
+  /* line 43, scss/modules/_feedback.scss */
+  .feedback-form input {
+    margin-top: 10px;
+    padding: 0 0 0 10px;
+    width: 90%;
+    height: 40px;
+    font: 400 14px sans-serif;
+    background: #ffffff;
+    border: none;
+    border-radius: 10px;
+  }
+  /* line 54, scss/modules/_feedback.scss */
+  .feedback-form textarea {
+    padding: 10px 0 0 10px;
+    width: 90%;
+    height: 200px;
+    font: 400 14px sans-serif;
+    background: #ffffff;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+  }
+  /* line 65, scss/modules/_feedback.scss */
+  .feedback-form button {
+    margin-top: 30px;
+    width: 210px;
+    height: 50px;
+    color: #ffffff;
+    font: 600 16px sans-serif;
+    background: #f7600e;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 320px) {
+  /* line 10, scss/modules/_footer.scss */
+  .footer {
+    width: 100%;
+    min-height: 105px;
+    background: #3b434c;
+  }
+
+  /* line 16, scss/modules/_footer.scss */
+  .foot-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* line 21, scss/modules/_footer.scss */
+  .foot-wrapper span {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  /* line 26, scss/modules/_footer.scss */
+  .foot-wrapper a {
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  /* line 31, scss/modules/_footer.scss */
+  .foot-wrapper img {
+    position: relative;
+    top: 2px;
+  }
+}
