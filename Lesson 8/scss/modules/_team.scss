@@ -34,8 +34,8 @@ $btn_secondary_color: #ffffff;
 	.team-person {
 
 		img {
-			width: 230px;
-			height: 260px;
+			width: 235px;
+			height: 280px;
 		}
 
 		h3, p, .fa {
@@ -74,6 +74,7 @@ $btn_secondary_color: #ffffff;
 	}
 }
 
+
 @media screen and (min-width: 568px) {
 	.team-person {
 		li {
@@ -87,7 +88,7 @@ $btn_secondary_color: #ffffff;
 		}
 
 		.social-icons {
-
+// якщо це видалити то щось зламається
 			li {
 				display: inline-block;
 				width: 35px;
@@ -97,16 +98,31 @@ $btn_secondary_color: #ffffff;
 					margin-left: 0;
 				}
 			}
-
-			.fa {
-				width: 35px;
-				height: 35px;
-				padding: 10px;
-				color: #ffffff;
-				font-size: 15px;
-				background: #9da1a5;
-				border-radius: 50%;
-			}
 		}
 	}
 }
+
+
+
+@media screen and (min-width: 1200px) {
+	.team-person {
+		li {
+			display: inline-block;
+			width: 20%;
+
+			p {
+				width: 90%;
+			}
+		}
+	}
+
+	.team-wrapper {
+			width: 100%;
+
+			p {
+				width: 40%;
+				margin: 29px auto 50px auto;
+			}
+		}
+}
+

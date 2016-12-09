@@ -121,10 +121,67 @@ $btn_secondary_color: #ffffff;
 	line-height: 30px;
 }
 
+
 @media screen and (min-width: 768px) {
 	.hero-content {
 		width: 75%;
 		margin-top: 75px;
 	}
 }
+
+//які стандарти для розмірів екрану в медіа запитах?
+//не "нагуглив" які бувають, тому взяв ті що блу в chrome і ті що для ноутбуків.
+
+@media screen and (min-width: 1024px) {
+	.hero-content {
+		width: 75%;
+		margin-top: 100px;
+
+		h2 {
+			font: 700 70px sans-serif;
+		}
+	}
+}
+
+
+
+@media screen and (min-width: 1200px) {
+	.hero-content {
+		width: 55%;
+		margin-top: 100px;
+
+		h2 {
+			font: 700 70px sans-serif;
+		}
+	}
+
+		.hero-btn {
+		width: 80%;
+		margin: 40px auto;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			margin: 10px 25px 45px 25px;
+
+			a {
+				display: block;
+				width: 210px;
+				margin: 0 auto;
+				color: $primary_font_color;
+				font: 600 16px/50px sans-serif;
+				border: 1px solid rgba(255, 255, 255, 0.2);
+				border-radius: 10px;
+				text-transform: uppercase;
+
+				&:hover {
+					background: $btn_primary_color;
+					transition: all 0.4s ease-in-out 0.1s
+				}
+			}
+		}
+	}
+}
+
+
 
