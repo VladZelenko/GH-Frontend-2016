@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i");
 /* line 5, scss/base/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -55,82 +56,78 @@ table {
   border-spacing: 0;
 }
 
-@font-face {
-  font-family: "Open Sans";
-  src: url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
-}
-/* line 8, scss/base/_base.scss */
+/* line 5, scss/base/_base.scss */
 body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 12, scss/base/_base.scss */
+/* line 9, scss/base/_base.scss */
 li {
   list-style: none;
 }
 
-/* line 16, scss/base/_base.scss */
+/* line 13, scss/base/_base.scss */
 a {
   text-decoration: none;
   cursor: pointer;
 }
 
-/* line 21, scss/base/_base.scss */
+/* line 18, scss/base/_base.scss */
 h1, h2, h3, h4, p {
   color: #3b434c;
 }
 
-/* line 25, scss/base/_base.scss */
+/* line 22, scss/base/_base.scss */
 *, *:after, *:before {
   box-sizing: border-box;
 }
 
-/* line 29, scss/base/_base.scss */
+/* line 26, scss/base/_base.scss */
 header, footer {
   padding: 50px 0;
 }
 
-/* line 33, scss/base/_base.scss */
+/* line 30, scss/base/_base.scss */
 section {
-  padding: 100px 0;
+  padding: 90px 0;
 }
 
 @media screen and (min-width: 320px) {
   /* line 9, scss/modules/_header.scss */
   .hero {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/head-bg.png") no-repeat;
     width: 100%;
-    min-height: 100vh;
+    height: 700px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/head-bg.png") no-repeat;
   }
 
-  /* line 15, scss/modules/_header.scss */
+  /* line 16, scss/modules/_header.scss */
   .header {
     width: 87%;
     margin: 0 auto;
     overflow: hidden;
   }
-  /* line 20, scss/modules/_header.scss */
+  /* line 21, scss/modules/_header.scss */
   .header h1 {
     float: left;
     font: 400 16px/17px sans-serif;
   }
-  /* line 24, scss/modules/_header.scss */
+  /* line 25, scss/modules/_header.scss */
   .header h1 a {
     color: #ffffff;
     font: 700 16px sans-serif;
   }
-  /* line 28, scss/modules/_header.scss */
+  /* line 29, scss/modules/_header.scss */
   .header h1 span {
     color: #f7600e;
   }
-  /* line 33, scss/modules/_header.scss */
+  /* line 34, scss/modules/_header.scss */
   .header .top-menu {
     position: relative;
     bottom: 10px;
     float: right;
     color: #ffffff;
   }
-  /* line 40, scss/modules/_header.scss */
+  /* line 41, scss/modules/_header.scss */
   .header .fa-bars {
     padding-left: 15px;
     font-size: 30px;
@@ -138,12 +135,12 @@ section {
     top: 5px;
   }
 
-  /* line 48, scss/modules/_header.scss */
+  /* line 49, scss/modules/_header.scss */
   .hero-content {
     width: 95%;
     margin: 0 auto;
   }
-  /* line 52, scss/modules/_header.scss */
+  /* line 53, scss/modules/_header.scss */
   .hero-content h2 {
     margin: 25px 0 40px 0;
     color: #ffffff;
@@ -151,33 +148,33 @@ section {
     text-transform: uppercase;
     text-align: center;
   }
-  /* line 60, scss/modules/_header.scss */
+  /* line 61, scss/modules/_header.scss */
   .hero-content h2 span {
     color: #f7600e;
   }
-  /* line 65, scss/modules/_header.scss */
+  /* line 66, scss/modules/_header.scss */
   .hero-content p {
     color: #ffffff;
     font: 400 20px/40px sans-serif;
     text-align: center;
   }
 
-  /* line 72, scss/modules/_header.scss */
+  /* line 73, scss/modules/_header.scss */
   .hero-btn-box {
     width: 100%;
   }
 
-  /* line 76, scss/modules/_header.scss */
+  /* line 77, scss/modules/_header.scss */
   .hero-btn {
     width: 80%;
     margin: 40px auto;
     text-align: center;
   }
-  /* line 81, scss/modules/_header.scss */
+  /* line 82, scss/modules/_header.scss */
   .hero-btn li {
     margin: 10px 0;
   }
-  /* line 84, scss/modules/_header.scss */
+  /* line 85, scss/modules/_header.scss */
   .hero-btn li a {
     display: block;
     width: 210px;
@@ -188,13 +185,13 @@ section {
     border-radius: 10px;
     text-transform: uppercase;
   }
-  /* line 94, scss/modules/_header.scss */
+  /* line 95, scss/modules/_header.scss */
   .hero-btn li a:hover {
     background: #f7600e;
     transition: all 0.4s ease-in-out 0.1s;
   }
 
-  /* line 102, scss/modules/_header.scss */
+  /* line 103, scss/modules/_header.scss */
   .scroll-down {
     display: block;
     width: 30px;
@@ -204,16 +201,24 @@ section {
     border-radius: 50%;
     text-align: center;
   }
-  /* line 111, scss/modules/_header.scss */
+  /* line 112, scss/modules/_header.scss */
   .scroll-down:hover {
     background: #f7600e;
     transition: all 0.4s ease-in-out 0.1s;
   }
-  /* line 116, scss/modules/_header.scss */
-  .scroll-down .fa-angle-down {
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 30px;
+}
+/* line 118, scss/modules/_header.scss */
+.fa-angle-down {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 125, scss/modules/_header.scss */
+  .hero-content {
+    width: 75%;
+    margin-top: 75px;
   }
 }
 @media screen and (min-width: 320px) {
@@ -249,11 +254,22 @@ section {
     font: 400 14px/26px sans-serif;
   }
 }
+@media screen and (min-width: 568px) {
+  /* line 44, scss/modules/_services.scss */
+  .services-wrapper li {
+    width: 40%;
+    margin-left: 20px;
+  }
+  /* line 48, scss/modules/_services.scss */
+  .services-wrapper li:nth-child(2n-1) {
+    margin-right: 5%;
+  }
+}
 @media screen and (min-width: 320px) {
   /* line 10, scss/modules/_subscribe.scss */
   .subscribe {
     width: 100%;
-    height: 270px;
+    height: 250px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/subscribe-bg.png");
   }
 
@@ -285,6 +301,31 @@ section {
     border-radius: 10px;
     text-transform: uppercase;
     cursor: pointer;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 46, scss/modules/_subscribe.scss */
+  .subscribe {
+    width: 100%;
+    height: 210px;
+  }
+
+  /* line 50, scss/modules/_subscribe.scss */
+  .subscribe-wrapper {
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  /* line 55, scss/modules/_subscribe.scss */
+  .subscribe-wrapper input[type="email"] {
+    float: left;
+    width: 300px;
+    margin: 0;
+  }
+  /* line 61, scss/modules/_subscribe.scss */
+  .subscribe-wrapper button {
+    float: right;
+    margin: 0;
   }
 }
 @media screen and (min-width: 320px) {
@@ -344,6 +385,21 @@ section {
     transition: all 0.4s ease-in-out 0.1s;
   }
 }
+@media screen and (min-width: 768px) {
+  /* line 69, scss/modules/_works.scss */
+  .works-wrapper p {
+    width: 60%;
+    margin: 29px auto 50px auto;
+  }
+  /* line 74, scss/modules/_works.scss */
+  .works-wrapper li {
+    width: 40%;
+  }
+  /* line 77, scss/modules/_works.scss */
+  .works-wrapper li:nth-child(2n-1) {
+    margin-right: 5%;
+  }
+}
 @media screen and (min-width: 320px) {
   /* line 10, scss/modules/_reviews.scss */
   .reviews {
@@ -372,6 +428,16 @@ section {
   .reviews-wrapper h4 {
     color: #ffffff;
     font: 600 18px sans-serif;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 37, scss/modules/_reviews.scss */
+  .reviews-wrapper {
+    width: 80%;
+  }
+  /* line 40, scss/modules/_reviews.scss */
+  .reviews-wrapper p {
+    padding: 25px 0 30px 0;
   }
 }
 @media screen and (min-width: 320px) {
@@ -403,39 +469,71 @@ section {
 
   /* line 36, scss/modules/_team.scss */
   .team-person img {
-    width: 90%;
+    width: 230px;
+    height: 260px;
   }
-  /* line 40, scss/modules/_team.scss */
+  /* line 41, scss/modules/_team.scss */
   .team-person h3, .team-person p, .team-person .fa {
     color: #9da1a5;
   }
-  /* line 45, scss/modules/_team.scss */
+  /* line 46, scss/modules/_team.scss */
   .team-person h3 {
-    margin: 20px 0 0 0;
+    margin: 20px 0 20px 0;
     font: 600 25px sans-serif;
     text-transform: uppercase;
   }
-  /* line 51, scss/modules/_team.scss */
-  .team-person .fa {
-    display: block;
-    width: 55px;
-    height: 55px;
-    margin: 20px auto 0 auto;
+}
+/* line 56, scss/modules/_team.scss */
+.social-icons li {
+  display: inline-block;
+  width: 35px;
+  margin-left: 20px;
+}
+/* line 61, scss/modules/_team.scss */
+.social-icons li:first-child {
+  margin-left: 0;
+}
+/* line 66, scss/modules/_team.scss */
+.social-icons .fa {
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 15px;
+  background: #9da1a5;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 568px) {
+  /* line 79, scss/modules/_team.scss */
+  .team-person li {
+    display: inline-block;
+    width: 45%;
+    margin-left: 20px;
+  }
+  /* line 84, scss/modules/_team.scss */
+  .team-person li:first-child {
+    margin-left: 0;
+  }
+  /* line 91, scss/modules/_team.scss */
+  .team-person .social-icons li {
+    display: inline-block;
+    width: 35px;
+    margin-left: 20px;
+  }
+  /* line 96, scss/modules/_team.scss */
+  .team-person .social-icons li:first-child {
+    margin-left: 0;
+  }
+  /* line 101, scss/modules/_team.scss */
+  .team-person .social-icons .fa {
+    width: 35px;
+    height: 35px;
     padding: 10px;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 15px;
     background: #9da1a5;
     border-radius: 50%;
-  }
-
-  /* line 66, scss/modules/_team.scss */
-  .social-icons li {
-    display: inline-block;
-    padding-left: 20px;
-  }
-  /* line 70, scss/modules/_team.scss */
-  .social-icons li:first-child {
-    padding-left: 0;
   }
 }
 @media screen and (min-width: 320px) {
@@ -508,6 +606,69 @@ section {
     text-transform: uppercase;
     cursor: pointer;
   }
+
+  /* line 80, scss/modules/_feedback.scss */
+  .feedback-social-icons li {
+    display: inline-block;
+  }
+  /* line 83, scss/modules/_feedback.scss */
+  .feedback-social-icons .fa {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 20px 10px 0 auto;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 50%;
+  }
+  /* line 94, scss/modules/_feedback.scss */
+  .feedback-social-icons .fa-facebook {
+    background: #205b9f;
+  }
+  /* line 98, scss/modules/_feedback.scss */
+  .feedback-social-icons .fa-twitter {
+    background: #00ace3;
+  }
+  /* line 102, scss/modules/_feedback.scss */
+  .feedback-social-icons .fa-google-plus {
+    background: #ff3921;
+  }
+  /* line 106, scss/modules/_feedback.scss */
+  .feedback-social-icons .fa-dribbble {
+    background: #ff72a5;
+  }
+  /* line 110, scss/modules/_feedback.scss */
+  .feedback-social-icons .fa-behance {
+    background: #009bd5;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 119, scss/modules/_feedback.scss */
+  .feedback-wrapper {
+    width: 80%;
+  }
+  /* line 122, scss/modules/_feedback.scss */
+  .feedback-wrapper p {
+    width: 75%;
+    margin: 29px auto 50px auto;
+  }
+
+  /* line 127, scss/modules/_feedback.scss */
+  .feedback-form {
+    overflow: hidden;
+  }
+  /* line 130, scss/modules/_feedback.scss */
+  .feedback-form button {
+    float: left;
+    margin-left: 30px;
+  }
+  /* line 135, scss/modules/_feedback.scss */
+  .feedback-form .feedback-social-icons {
+    display: inline-block;
+    float: right;
+    margin: 15px 25px 0 0;
+  }
 }
 @media screen and (min-width: 320px) {
   /* line 10, scss/modules/_footer.scss */
@@ -538,5 +699,21 @@ section {
   .foot-wrapper img {
     position: relative;
     top: 2px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 39, scss/modules/_footer.scss */
+  .foot-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  /* line 44, scss/modules/_footer.scss */
+  .foot-wrapper span {
+    float: left;
+  }
+  /* line 48, scss/modules/_footer.scss */
+  .foot-wrapper a {
+    float: right;
   }
 }

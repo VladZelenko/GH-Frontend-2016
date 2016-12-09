@@ -9,7 +9,7 @@ $btn_secondary_color: #ffffff;
 @media screen and (min-width: 320px) {
 	.subscribe {
 		width: 100%;
-		height: 270px;
+		height: 250px;
 		background: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("img/subscribe-bg.png")
 	}
 
@@ -38,6 +38,29 @@ $btn_secondary_color: #ffffff;
 			border-radius: 10px;
 			text-transform: uppercase;
 			cursor: pointer;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.subscribe {
+		width: 100%;
+		height: 210px;
+	}
+	.subscribe-wrapper {
+		width: 60%;
+		margin: 0 auto;
+		overflow: hidden;
+
+		input[type="email"] {
+			float: left;
+			width: 300px;
+			margin: 0;
+		}
+
+		button {
+			float: right;
+			margin: 0;
 		}
 	}
 }

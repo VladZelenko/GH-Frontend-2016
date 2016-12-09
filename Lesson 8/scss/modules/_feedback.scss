@@ -75,4 +75,67 @@ $btn_secondary_color: #ffffff;
 			cursor: pointer;
 		}
 	}
+
+	.feedback-social-icons {
+		li {
+			display: inline-block;
+		}
+		.fa {
+			display: block;
+			width: 35px;
+			height: 35px;
+			margin: 20px 10px 0 auto;
+			padding: 10px;
+			color: #ffffff;
+			font-size: 15px;
+			border-radius: 50%;
+		}
+
+		.fa-facebook {
+			background: #205b9f;
+		}
+
+		.fa-twitter {
+			background: #00ace3;
+		}
+
+		.fa-google-plus {
+			background: #ff3921;
+		}
+
+		.fa-dribbble {
+			background: #ff72a5;
+		}
+
+		.fa-behance {
+			background: #009bd5;
+		}
+	}
+}
+
+
+
+@media screen and (min-width: 768px) {
+	.feedback-wrapper {
+		width: 80%;
+
+		p {
+			width: 75%;
+			margin: 29px auto 50px auto;
+		}
+	}
+	.feedback-form {
+		overflow: hidden;
+
+		button {
+			float: left;
+			margin-left: 30px;
+		}
+
+		.feedback-social-icons {
+			display: inline-block;
+			float: right;
+			margin: 15px 25px 0 0;
+		}
+	}
 }

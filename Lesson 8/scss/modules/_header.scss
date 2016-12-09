@@ -7,9 +7,10 @@ $btn_secondary_color: #ffffff;
 
 @media screen and (min-width: 320px) {
 	.hero {
-		background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/head-bg.png") no-repeat;
 		width: 100%;
-		min-height: 100vh;
+		height: 700px;
+		background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/head-bg.png") no-repeat;
+
 	}
 
 	.header {
@@ -112,12 +113,18 @@ $btn_secondary_color: #ffffff;
 			background: $btn_primary_color;
 			transition: all 0.4s ease-in-out 0.1s
 		}
+	}
+}
+.fa-angle-down {
+	color: $primary_font_color;
+	font-size: 20px;
+	line-height: 30px;
+}
 
-		.fa-angle-down {
-			color: $primary_font_color;
-			font-size: 20px;
-			line-height: 30px;
-		}
+@media screen and (min-width: 768px) {
+	.hero-content {
+		width: 75%;
+		margin-top: 75px;
 	}
 }
 

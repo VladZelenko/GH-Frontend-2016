@@ -38,3 +38,16 @@ $btn_secondary_color: #ffffff;
 		}
 	}
 }
+
+@media screen and (min-width: 568px) {
+	.services-wrapper {
+		li {
+			width: 40%;
+			margin-left: 20px;
+
+			&:nth-child(2n-1) {
+				margin-right: 5%;
+			}
+		}
+	}
+}

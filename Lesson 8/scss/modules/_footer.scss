@@ -34,3 +34,19 @@ $btn_secondary_color: #ffffff;
 		}
 	}
 }
+
+@media screen and (min-width: 768px) {
+	.foot-wrapper {
+		width: 80%;
+		margin: 0 auto;
+		overflow: hidden;
+
+		span {
+			float: left;
+		}
+
+		a {
+			float: right;
+		}
+	}
+}
