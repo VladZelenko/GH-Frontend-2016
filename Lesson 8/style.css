@@ -844,8 +844,8 @@ section {
   /* line 157, scss/modules/_feedback.scss */
   .feedback-form input {
     display: inline-block;
-    width: 355px;
-    margin: 0 25px 30px 0;
+    width: 42%;
+    margin: 0 5% 30px 0;
   }
   /* line 162, scss/modules/_feedback.scss */
   .feedback-form input:last-child {
