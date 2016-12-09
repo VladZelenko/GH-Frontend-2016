@@ -1,20 +1,12 @@
-$primary_font_color: #ffffff;
-$secondary_font_color: #3b434c;
-$span_color: #f7600e;
-$btn_primary_color: #f7600e;
-$btn_secondary_color: #ffffff;
-
-//мб треба б винести змінні у окремий файлик і просто його підключати
-
 @media screen and (min-width: 320px) {
 	.works-wrapper {
 		width: 90%;
 		margin: 0 auto;
-		text-align: center;
 
 		.works-head {
 			color: $secondary_font_color;
 			font: 600 35px/40px sans-serif;
+			text-align: center;
 			text-transform: uppercase;
 
 			span {
@@ -25,105 +17,164 @@ $btn_secondary_color: #ffffff;
 		p {
 			margin: 15px 0;
 			font: 400 16px/30px sans-serif;
+			text-align: center;
 		}
 	}
 
-	.list-works {
-
-		li {
-			display: inline-block;
-			margin: 15px 0;
-		}
-
-		img {
-			width: 280px;
-		}
+	.list-works ul, .list-works li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
 	}
 
-		.overlay {//ховер на портфолио, зробить
-			display: none;
-		}
-
-		.works-btn-bottom {
-			display: block;
-			width: 210px;
-			height: 50px;
-			margin: 40px auto 0 auto;
-			color: #3b434c;
-			font: 600 16px/50px sans-serif;
-			border: 1px solid rgba(59, 67, 76, 0.2);
-			border-radius: 10px;
-			text-transform: uppercase;
-
-			&:hover {
-				background: $btn_primary_color;
-				color: $btn_secondary_color;
-				transition: all 0.4s ease-in-out 0.1s;
-
-			}
-		}
-	}
-	@media screen and (min-width: 768px) {
-
-		.works-wrapper {
-			p {
-				width: 60%;
-				margin: 29px auto 50px auto;
-			}
-
-			li {
-				width: 40%;
-
-				&:nth-child(2n-1) {
-					margin-right: 5%;
-				}
-			}
-		}
+	.list-works li {
+		display: inline-block;
+		position: relative;
+		margin: 20px;
+		width: 360px;
+		overflow: hidden;
 	}
 
-
-	@media screen and (min-width: 1024px) {
-
-		.works-wrapper {
-			width: 100%;
-			p {
-				width: 60%;
-				margin: 29px auto 50px auto;
-			}
-
-			li {
-				width: 30%;
-
-				&:nth-child(2n-1) {
-					margin-right: 0;
-				}
-			}
-		}
+	.list-works img {
+		max-width: 100%;
+		display: block;
 	}
 
+	.overlay {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+		background: rgba(248, 112, 38, 0.9);
+		color: #ffffff;
+		text-align: center;
+		transition: all .5s;
+		transform: scale(0);
+		opacity: 0;
 
-		@media screen and (min-width: 1200px) {
+	}
 
-		.works-wrapper {
-			width: 100%;
-			p {
-				width: 35%;
-				margin: 29px auto 50px auto;
-			}
-		}
-		.list-works {
+	.list-works li:hover .overlay {
+		opacity: 1;
+		top: 0;
+		transform: scale(1);
+	}
 
-		li {
-			display: inline-block;
-			margin: 15px 0;
-		}
+	.overlay h5 {
+		color: $primary_font_color;
+		font: 600 25px sans-serif;
+		text-transform: uppercase;
+	}
 
-		img {
-			width: 360px;
-			height: 360px;
+	.overlay p {
+		margin-bottom: 50px;
+		color: $primary_font_color;
+		font: 400 14px/26px sans-serif;
+	}
+
+	.overlay a {
+		display: block;
+		margin: 0 auto;
+		width: 210px;
+		height: 50px;
+		color: #f86a1d;
+		font: 600 16px/50px sans-serif;
+		background: white;
+		border: 1px solid white;
+		border-radius: 10px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.overlay-caption {
+		width: 80%;
+		margin: 85px auto;
+	}
+
+	.works-btn-bottom {
+		display: block;
+		width: 210px;
+		height: 50px;
+		margin: 40px auto 0 auto;
+		color: $secondary_font_color;
+		font: 600 16px/50px sans-serif;
+		border: 1px solid rgba(59, 67, 76, 0.2);
+		border-radius: 10px;
+		text-align: center;
+		text-transform: uppercase;
+
+		&:hover {
+			background: $btn_primary_color;
+			color: $btn_secondary_color;
+			transition: all 0.4s ease-in-out 0.1s;
+
 		}
 	}
-	}
+}
+
+// @media screen and (min-width: 768px) {
+
+// 	.works-wrapper {
+// 		p {
+// 			width: 60%;
+// 			margin: 29px auto 50px auto;
+// 		}
+
+// 		li {
+// 			width: 40%;
+
+// 			&:nth-child(2n-1) {
+// 				margin-right: 5%;
+// 			}
+// 		}
+// 	}
+// }
+
+
+// @media screen and (min-width: 1024px) {
+
+// 	.works-wrapper {
+// 		width: 100%;
+// 		p {
+// 			width: 60%;
+// 			margin: 29px auto 50px auto;
+// 		}
+
+// 		li {
+// 			width: 30%;
+
+// 			&:nth-child(2n-1) {
+// 				margin-right: 0;
+// 			}
+// 		}
+// 	}
+// }
+
+
+// @media screen and (min-width: 1200px) {
+
+// 	.works-wrapper {
+// 		width: 100%;
+// 		p {
+// 			width: 35%;
+// 			margin: 29px auto 50px auto;
+// 		}
+// 	}
+// 	.list-works {
+
+// 		li {
+// 			display: inline-block;
+// 			margin: 15px 0;
+// 		}
+
+// 		img {
+// 			width: 360px;
+// 			height: 360px;
+// 		}
+// 	}
+// }
 
 
 
